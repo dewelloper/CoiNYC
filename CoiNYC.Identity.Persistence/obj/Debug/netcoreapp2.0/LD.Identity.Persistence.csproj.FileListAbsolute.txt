@@ -1,0 +1,12 @@
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\bin\Debug\netcoreapp2.0\AspNetCoreIdentityServer4.Persistence.deps.json
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\bin\Debug\netcoreapp2.0\AspNetCoreIdentityServer4.Persistence.runtimeconfig.json
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\bin\Debug\netcoreapp2.0\AspNetCoreIdentityServer4.Persistence.runtimeconfig.dev.json
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\bin\Debug\netcoreapp2.0\AspNetCoreIdentityServer4.Persistence.dll
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\bin\Debug\netcoreapp2.0\AspNetCoreIdentityServer4.Persistence.pdb
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\obj\Debug\netcoreapp2.0\LD.Identity.Persistence.csprojAssemblyReference.cache
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\obj\Debug\netcoreapp2.0\LD.Identity.Persistence.AssemblyInfoInputs.cache
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\obj\Debug\netcoreapp2.0\LD.Identity.Persistence.AssemblyInfo.cs
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\obj\Debug\netcoreapp2.0\LD.Identity.Persistence.csproj.CoreCompileInputs.cache
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\obj\Debug\netcoreapp2.0\AspNetCoreIdentityServer4.Persistence.dll
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\obj\Debug\netcoreapp2.0\AspNetCoreIdentityServer4.Persistence.pdb
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Identity.Persistence\obj\Debug\netcoreapp2.0\LD.Identity.Persistence.genruntimeconfig.cache

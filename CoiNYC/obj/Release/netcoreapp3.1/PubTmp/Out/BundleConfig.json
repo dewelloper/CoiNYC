@@ -1,0 +1,61 @@
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css",
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/animate.css",
+      "wwwroot/css/style.css",
+      "wwwroot/css/style2.css",
+      "wwwroot/css/bootstrap-table.min.css",
+      "wwwroot/plugins/fancybox/jquery.fancybox.min.css",
+      "wwwroot/plugins/summernote/summernote.css",
+      "wwwroot/plugins/summernote/summernote-bs3.css",
+      "wwwroot/plugins/cropper/cropper.min.css",
+      "wwwroot/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.css",
+      "wwwroot/plugins/bootstrap-datepicker/bootstrap-datepicker3.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/jquery-3.3.1.js",
+      "wwwroot/js/site.js",
+      "wwwroot/js/cldr.js",
+      "wwwroot/js/event.js",
+      "wwwroot/js/supplemental.js",
+      "wwwroot/js/globalize.js",
+      "wwwroot/js/globalize/message.js",
+      "wwwroot/js/globalize/number.js",
+      "wwwroot/js/globalize/date.js",
+      "wwwroot/js/jquery.unobtrusive-ajax.min.js",
+      "wwwroot/js/jquery.validate.min.js",
+      "wwwroot/js/jquery.validate.unobtrusive.min.js",
+      "wwwroot/js/jquery.validate.globalize.js",
+      "wwwroot/js/bootstrap.min.js",
+      "wwwroot/js/TwitterBootstrapMvcJs.js",
+      "wwwroot/js/plugins/metisMenu/metisMenu.min.js",
+      "wwwroot/js/plugins/pace/pace.min.js",
+      "wwwroot/js/app/inspinia.js",
+      "wwwroot/js/plugins/slimScroll/jquery.slimscroll.min.js",
+      "wwwroot/js/plugins/bootstrap-table/bootstrap-table.min.js",
+      "wwwroot/js/plugins/fancybox/jquery.fancybox.min.js",
+      "wwwroot/js/plugins/summernote/summernote.min.js",
+      "wwwroot/js/plugins/cropper/cropper.min.js",
+      "wwwroot/js/plugins/jquery.form/jquery.form.min.js",
+      "wwwroot/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js",
+      "wwwroot/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js",
+      "wwwroot/js/app/grid.js",
+      "wwwroot/js/app/common.js",
+      "wwwroot/js/plugins/table-export/FileSaver.min.js",
+      "wwwroot/js/plugins/table-export/xlsx.core.min.js",
+      "wwwroot/js/plugins/table-export/tableExport.js",
+      "wwwroot/js/plugins/table-export/bootstrap-table-export.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

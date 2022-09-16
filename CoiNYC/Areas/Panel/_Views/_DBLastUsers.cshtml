@@ -1,0 +1,32 @@
+﻿@model CoiNYC.Domain.Dashboard.DashboardDto
+@{
+    Layout = null;
+}
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>@string.Format(R.Last_0_Users, Model.LastItemCount)</h5>
+        <div class="ibox-tools">
+            <a class="collapse-link">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+            <a class="close-link">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <div class="ibox-content">
+        <div class="feed-activity-list">
+            @foreach (var user in Model.LastUsers)
+            {
+                <div class="feed-element">
+                    <div>
+                        <small class="pull-right text-navy">@user.Email</small>
+                        <a href="@Url.Action("Edit", "Profile", new { area = "Admin", id = user.Id })" target="_blank"><strong>@user.FirstName @user.LastName</strong></a>
+                        <div></div>
+                        <small class="text-muted">@user.RegisterDateTime.ToString("dd.MM.yyyy HH:mm")</small>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

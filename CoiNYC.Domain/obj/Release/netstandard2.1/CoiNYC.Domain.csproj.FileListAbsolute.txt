@@ -1,0 +1,17 @@
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\bin\Release\netstandard2.1\CoiNYC.Domain.deps.json
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\bin\Release\netstandard2.1\CoiNYC.Domain.dll
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\bin\Release\netstandard2.1\CoiNYC.Domain.pdb
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\bin\Release\netstandard2.1\tr\CoiNYC.Domain.resources.dll
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\bin\Release\netstandard2.1\CoiNYC.Core.dll
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\bin\Release\netstandard2.1\CoiNYC.Core.pdb
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.csprojAssemblyReference.cache
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.Resources.E.resources
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.Resources.R.resources
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.Resources.E.tr.resources
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.Resources.R.tr.resources
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.csproj.GenerateResource.cache
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.csproj.CoreCompileInputs.cache
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\tr\CoiNYC.Domain.resources.dll
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.csproj.CopyComplete
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.dll
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Domain\obj\Release\netstandard2.1\CoiNYC.Domain.pdb

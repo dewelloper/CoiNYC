@@ -1,0 +1,34 @@
+﻿.leftop {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+hr {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+th {
+    color: black;
+    font-size: 12px !important;
+}
+
+label {
+    color: black;
+}
+
+
+body {
+    color: #000000 !important;
+}
+
+.table td.fit,
+.table th.fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.fixed-table-toolbar .bars .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-right: 2px solid white;
+}

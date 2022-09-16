@@ -1,0 +1,51 @@
+﻿@using CoiNYC.Infrastructure
+@{
+    Layout = "~/Areas/Shared/_Layout.cshtml";
+    var breadcrumbs = ViewBag.Breadcrumbs as List<Breadcrumb>;
+}
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>@ViewBag.Title</h2>
+
+        @if (breadcrumbs != null && breadcrumbs.Count > 0)
+        {
+            <ol class="breadcrumb">
+
+                @foreach (var crumb in breadcrumbs)
+                {
+                    @*<li class="@crumb.ActiveClass">
+
+                            </li>
+                            if (crumb.IsActive)
+                            {
+                                <a href="@(crumb.Url ?? "#")"><strong>@crumb.Name</strong></a>
+                        }
+                            else
+                            {
+                                <li>
+                                    <a href="@(crumb.Url ?? "")">@crumb.Name</a>
+                                </li>
+                            }*@
+                }
+
+            </ol>
+
+        }
+
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper-content animated fadeInRight" style="padding:20px 0px">
+    @RenderBody()
+</div>
+
+@section Styles{
+    @RenderSection("Styles", false)
+}
+
+@section scripts{
+    @RenderSection("scripts", false)
+}

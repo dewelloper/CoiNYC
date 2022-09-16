@@ -1,0 +1,19 @@
+﻿@using CoiNYC.Domain.Resources;
+
+@{
+    Layout = null;
+
+    var currentCultureCode = System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+}
+
+<header class="header" id="site-header">
+    <div class="container">
+        <div class="header-content-wrapper">
+            <a href="https://coinyc.com" class="woox-icon">
+                <img src="~/img/coinyc_logo.png" alt="Coincy">
+            </a>
+            @await Html.PartialAsync("_LoginPartial")
+        </div>
+        
+    </div>
+</header>

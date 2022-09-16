@@ -1,0 +1,125 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <UserSecretsId>9c7c1661-534a-4e5b-8e9a-1df934dafcb5</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+    <AssemblyName>CoiNYC</AssemblyName>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Builders\**" />
+    <Compile Remove="Services\UrlService\**" />
+    <Content Remove="Builders\**" />
+    <Content Remove="Services\UrlService\**" />
+    <EmbeddedResource Remove="Builders\**" />
+    <EmbeddedResource Remove="Services\UrlService\**" />
+    <None Remove="Builders\**" />
+    <None Remove="Services\UrlService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Areas\Panel\_Views\Index.cshtml" />
+    <Content Remove="Areas\Panel\_Views\_DBLastOrders.cshtml" />
+    <Content Remove="Areas\Panel\_Views\_DBLastProducts.cshtml" />
+    <Content Remove="Areas\Panel\_Views\_DBLastUsers.cshtml" />
+    <Content Remove="Areas\Panel\_Views\_DBWaitingOrders.cshtml" />
+    <Content Remove="Areas\Web.config" />
+    <Content Remove="config.json" />
+    <Content Remove="Features\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="config.json" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.4" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Boilerplate.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="bootstrap" Version="4.4.1" />
+    <PackageReference Include="BootstrapMvc.Bootstrap4Mvc6" Version="1.1.1" />
+    <PackageReference Include="elmah.corelibrary" Version="1.2.2" />
+    <PackageReference Include="ElmahCore" Version="1.2.5" />
+    <PackageReference Include="Fluent.Infrastructure" Version="2.0.0-beta-01" />
+    <PackageReference Include="IdentityManager" Version="1.0.0-beta5-5" />
+    <PackageReference Include="IdentityModel" Version="4.2.0" />
+    <PackageReference Include="jQWidgets.AspNetCore.Mvc.Bootstrap.TagHelpers" Version="2.0.0" />
+    <PackageReference Include="jQWidgets.AspNetCore.Mvc.TagHelpers" Version="2.0.1" />
+    <PackageReference Include="jQWidgets_Framework" Version="8.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Mapster" Version="5.3.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.14.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc.Core" Version="6.0.0-rc1-final" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="3.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Net.Compilers" Version="3.5.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+    <PackageReference Include="MvcJqGrid" Version="1.0.16" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.0" />
+    <PackageReference Include="System.Runtime.Caching" Version="4.7.0" />
+    <PackageReference Include="System.Security.Claims" Version="4.3.0" />
+    <PackageReference Include="TelerikMvcExtensions" Version="2013.2.611" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoiNYC.Configuration\CoiNYC.Configuration.csproj" />
+    <ProjectReference Include="..\CoiNYC.Core\CoiNYC.Core.csproj" />
+    <ProjectReference Include="..\CoiNYC.Domain\CoiNYC.Domain.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Update="Features\_ViewImports.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Features\_ViewStart.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Areas\Panel\_Models\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="Areas\Manage\_Views\About.cshtml" />
+    <None Include="Areas\Manage\_Views\Contact.cshtml" />
+    <None Include="Areas\Manage\_Views\Index.cshtml" />
+    <None Include="Areas\Manage\_Views\Privacy.cshtml" />
+    <None Include="Features\Account\_Views\Login.cshtml" />
+    <None Include="Features\Account\_Views\Register.cshtml" />
+    <None Include="Features\Account\_Views\SignedOut.cshtml" />
+  </ItemGroup>
+  
+  <!--<Target Name="MyPreCompileTarget" BeforeTargets="Build">
+    <Exec Command="gulp min" />
+  </Target>-->
+  
+</Project>

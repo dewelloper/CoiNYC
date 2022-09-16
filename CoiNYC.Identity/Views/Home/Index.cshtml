@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Account Management</h1>
+@if (User.Identity.IsAuthenticated)
+{
+    <h1>Welcome  @User.Identity.Name</h1>
+    @*<h2>User Claims</h2>
+    <dl>
+        @foreach (var claim in User.Claims)
+        {
+            <dt>@claim.Type</dt>
+            <dd>@claim.Value</dd>
+        }
+    </dl>*@
+
+}

@@ -1,0 +1,87 @@
+﻿<script type="text/javascript">
+    function copyToClipboard(element) {
+        var valletAdr = $(element).closest("tr").find("span.mywallet").text();
+        
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(valletAdr).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+</script>
+
+<section>
+    <div class="container">
+        <div class="row medium-padding100">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <table class="table--style1">
+                    <thead>
+                        <tr>
+                            <th class="bg-primary-color">Donate with</th>
+                            <th>Wallets / free and better informations to community</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BTC</td>
+                            <td><span class="mywallet">bc1q3uhz2vmq79cqm4l5t8nsf27932fz92p7r7xxny</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>ETH</td>
+                            <td><span class="mywallet">0xE563A9B931E713A4923a739fA0eE50bF010e1A34</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>XRP</td>
+                            <td><span class="mywallet">rGkyytgyYwwedmBcaDhAuMjYQWSCxfPpgp</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>BCH</td>
+                            <td><span class="mywallet">qzn7d0g589enspvr7ar79wsd6jfsqm7jmupwnwywxx</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>LTC</td>
+                            <td><span class="mywallet">ltc1q3gtw7dh795zvym0wuxq2cf8g33xs2t03h60d3e</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>TRX</td>
+                            <td><span class="mywallet">ltc1q3gtw7dh795zvym0wuxq2cf8g33xs2t03h60d3e</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>DASH</td>
+                            <td><span class="mywallet">XoYKsEAdTfFN3Sap3WzX1DMLQdDeXXy91a</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>ETC</td>
+                            <td><span class="mywallet">0x2AA0085F8f85a02A28285b6791d71B19Fd4EF2B3</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>ZEC</td>
+                            <td><span class="mywallet">t1QNdtfmE47aVQ1BfY33cZ6XfEkdQMfdntb</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>DOGE</td>
+                            <td><span class="mywallet">DAwnEQ3hRwVSSejg7skeaX9nwqx1anXZr5</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>IOTX</td>
+                            <td><span class="mywallet">io1ulpgp27cy55rr8857y5hq7dw5r3kjssf4qdlth</span></td>
+                            <td><button class="btn btn-default" onclick="copyToClipboard(this)">Copy</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr class="divider">
+    </div>
+</section>

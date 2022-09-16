@@ -1,0 +1,96 @@
+﻿@using CoiNYC.Infrastructure
+@using Microsoft.AspNetCore.Html;
+
+@model List<ButtonBaseModel>
+
+
+<div class="bars pull-left">
+    <div class="btn-group">
+        @foreach (var button in Model.OrderBy(o => o.Order))
+        {
+            if (button.Type == CoiNYC.Infrastructure.ButtonType.Button)
+            {
+                @RenderButton((ButtonModel)button)
+            }
+            else
+            {
+                var buttonGroup = (DropdownButtonModel)button;
+                if (buttonGroup.Buttons != null && buttonGroup.Buttons.Count > 0)
+                {
+                    <div class="btn-group">
+                        <button data-toggle="dropdown" class="btn btn-outline @buttonGroup.Class dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            @buttonGroup.Text
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            @foreach (var subButton in buttonGroup.Buttons.OrderBy(x => x.Order))
+                            {
+                                <li>@RenderSubButton((ButtonModel)subButton)</li>
+                            }
+
+                        </ul>
+                    </div>
+                }
+            }
+        }
+
+    </div>
+</div>
+<style>
+    .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+        border-right: 2px solid white;
+    }
+</style>
+
+
+@functions{
+    public IHtmlContent RenderButton(ButtonModel button)
+    {
+        var @prependIcn = "";
+        if (!string.IsNullOrEmpty(button.PrependIcon))
+        {
+            prependIcn = "<span><i class='" + @button.PrependIcon + "'></i></span>";
+        }
+
+        var @appendIcn = "";
+        if (!string.IsNullOrEmpty(button.AppendIcon))
+        {
+            appendIcn = "<span><i class='"+@button.AppendIcon+"'></i></span>";
+        }
+
+        var @btnClass = "";
+        if(button.Class != null)
+        {
+            btnClass = button.Class + " btn-md";
+        }
+
+        return @Html.Raw(@"<a href='"+ @Url.Action( button.Action , button.Controller , button.RouteValues ) + "' data-loading-text='Loading...' class='btn btn-outline "+ btnClass + " )' " + button.Binding.ToDataAttributes()+">"
+            + prependIcn
+            + button.Text
+            + appendIcn + "</a>");
+    }
+}
+
+
+@functions{
+    public IHtmlContent RenderSubButton(ButtonModel button)
+    {
+        var @appIcn = "";
+        if (!string.IsNullOrEmpty(button.AppendIcon))
+        {
+            appIcn = "<span><i class=" + @button.AppendIcon + "></i></span>";
+        }
+
+        var @prependIcn = "";
+        if (!string.IsNullOrEmpty(button.PrependIcon))
+        {
+            prependIcn = "<span><i class=" + @button.PrependIcon + "></i></span>";
+        }
+
+        return @Html.Raw(@"<a href='"+ @Url.Action(button.Action , button.Controller , button.RouteValues ) + "' class='" + button.Class + " " + button.Binding.ToDataAttributes() + "'>"
+           + prependIcn
+           + button.Text
+           + appIcn + "</a>");
+     }
+}
+

@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Localization;
+@using CoiNYC.Features.Shared.Components.CultureSwitcher;
+@inject IHttpContextAccessor HttpContextAccessor
+@model CultureSwitcherModel
+@inject CoiNYC.Services.CurrencyService currencyService;
+
+
+@{
+    Layout = null;
+    var currentCurrency = currencyService.GetCurrent();
+    var currentCultureCode = HttpContextAccessor.HttpContext.Features.Get<IRequestCultureFeature>().RequestCulture.Culture.Name;
+}
+
+
+<select class="woox--select language-switcher" data-minimum-results-for-search="Infinity" data-dropdown-css-class="language-switcher-dropdown">
+
+    @foreach (var culture in Model.SupportedCultures)
+    {
+        @if (@currentCultureCode.ToUpper() == @culture.Name.ToUpper())
+        {
+            <option selected value="@culture.Name.ToUpper()" data-href="@Url.RouteUrl("ChangeLanguage", new { culture = culture })">@culture.Name.ToUpper()</option>
+        }
+        else
+        {
+            <option value="@culture.Name.ToUpper()" data-href="@Url.RouteUrl("ChangeLanguage", new { culture = culture })">@culture.Name.ToUpper()</option>
+        }
+    }
+
+</select>

@@ -1,0 +1,92 @@
+﻿<script src="~/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".tradingview-widget-copyright").empty();
+        $('.tradingview-widget-container').width('105%');
+    });
+</script>
+
+
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" >
+        {
+            "symbols": [
+                {
+                    "description": "\tBTC/USD (Bitstamp)",
+                    "proName": "BITSTAMP:BTCUSD"
+                },
+                {
+                    "description": "ETH/USD (Bitstamp)",
+                    "proName": "BITSTAMP:ETHUSD"
+                },
+                {
+                    "description": "BCH/USD (Kraken)",
+                    "proName": "KRAKEN:BCHUSD"
+                },
+                {
+                    "description": "EOS/USD (Bitfinex)",
+                    "proName": "BITFINEX:EOSUSD"
+                },
+                {
+                    "description": "ATOM /USD (Coinbase)",
+                    "proName": "COINBASE:ATOMUSD"
+                },
+                {
+                    "description": "LTC/USD (Kraken)",
+                    "proName": "KRAKEN:LTCUSD"
+                },
+                {
+                    "description": "XRP/USD (Poloniex)",
+                    "proName": "POLONIEX:XRPUSDT"
+                },
+                {
+                    "description": "DASH/USD (Kraken)",
+                    "proName": "KRAKEN:DASHUSD"
+                },
+                {
+                    "description": "DOGE/USD Tether (Huobi)",
+                    "proName": "HUOBI:DOGEUSDT"
+                },
+                {
+                    "description": "XLM/USD (Kraken)",
+                    "proName": "KRAKEN:XLMUSD"
+                },
+                {
+                    "description": "XZC/USD (Huobi)",
+                    "proName": "HUOBI:XZCUSDT"
+                },
+                {
+                    "description": "TRX/USD (Kraken)",
+                    "proName": "KRAKEN:TRXUSD"
+                },
+                {
+                    "description": "BTC/TETHER",
+                    "proName": "BITTREX:BTCUSDT"
+                },
+                {
+                    "description": "BTC-SV/BTC",
+                    "proName": "HUOBI:BSVBTC"
+                }
+            ],
+                "colorTheme": "dark",
+                    "isTransparent": true,
+                        "largeChartUrl": "https://coinyc.com",
+                            "displayMode": "adaptive",
+                                "locale": "en"
+        }
+    </script>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("iframe").height($(window).height());
+        $("iframe").width($(window).width());
+
+        $(window).resize(function () {
+            $("iframe").height($(window).height());
+            $("iframe").width($(window).width());
+        });
+    });
+</script>

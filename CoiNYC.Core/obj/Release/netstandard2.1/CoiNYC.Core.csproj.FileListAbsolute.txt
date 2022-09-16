@@ -1,0 +1,9 @@
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\bin\Release\netstandard2.1\CoiNYC.Core.deps.json
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\bin\Release\netstandard2.1\CoiNYC.Core.dll
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\bin\Release\netstandard2.1\CoiNYC.Core.pdb
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\obj\Release\netstandard2.1\CoiNYC.Core.csprojAssemblyReference.cache
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\obj\Release\netstandard2.1\CoiNYC.Core.AssemblyInfoInputs.cache
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\obj\Release\netstandard2.1\CoiNYC.Core.AssemblyInfo.cs
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\obj\Release\netstandard2.1\CoiNYC.Core.csproj.CoreCompileInputs.cache
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\obj\Release\netstandard2.1\CoiNYC.Core.dll
+D:\H_New_Projects\CoiNYC\CoiNYC\CoiNYC.Core\obj\Release\netstandard2.1\CoiNYC.Core.pdb

@@ -1,0 +1,42 @@
+﻿@using CoiNYC.Core.Helpers
+@model CoiNYC.Domain.Dashboard.DashboardDto
+   
+@{
+    Layout = null;
+}
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>@string.Format(R.Last_0_Orders,Model.LastItemCount)</h5>
+        <div class="ibox-tools">
+            <a class="collapse-link">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+            <a class="close-link">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </div>
+    <div class="ibox-content">
+        <table class="table table-hover no-margins">
+            <thead>
+                <tr>
+                    <th>@R.Status</th>
+                    <th>@R.Date</th>
+                    <th>@R.OrderNo</th>
+                    <th>@R.Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.LastOrders)
+                {
+                    <tr>
+                        <td><span class="label label-@(order.OrderStatus == CoiNYC.Domain.Orders.OrderStatus.Cancelled ? "danger" : (order.OrderStatus == CoiNYC.Domain.Orders.OrderStatus.WaitingConfirmation ? "warning" : (order.OrderStatus != CoiNYC.Domain.Orders.OrderStatus.Delivered ? "success" : "primary")))">@EnumFunc.GetLocalizedString(order.OrderStatus)</span> </td>
+                        <td><i class="fa fa-clock-o"></i> @order.CreateDateTime.ToString("dd MMM HH:mm")</td>
+                        <td><a href="@Url.Action("Edit", "Order", new { area = "admin", id = order.Id })" target="_blank">@order.OrderNo</a></td>
+                        <td class="text-navy"> <i class="fa fa-level-up"></i> @order.TotalPrice @order.CurrencyCode</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

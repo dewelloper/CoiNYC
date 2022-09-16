@@ -1,0 +1,17 @@
+D:\pravida\legaldocks\LegalDocks\LD.Configuration\bin\Debug\netstandard2.0\LD.Configuration.deps.json
+D:\pravida\legaldocks\LegalDocks\LD.Configuration\bin\Debug\netstandard2.0\LD.Configuration.dll
+D:\pravida\legaldocks\LegalDocks\LD.Configuration\bin\Debug\netstandard2.0\LD.Configuration.pdb
+D:\pravida\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.csprojAssemblyReference.cache
+D:\pravida\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.AssemblyInfoInputs.cache
+D:\pravida\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.AssemblyInfo.cs
+D:\pravida\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.dll
+D:\pravida\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.pdb
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\bin\Debug\netstandard2.0\LD.Configuration.deps.json
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\bin\Debug\netstandard2.0\LD.Configuration.dll
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\bin\Debug\netstandard2.0\LD.Configuration.pdb
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.AssemblyInfoInputs.cache
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.AssemblyInfo.cs
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.csproj.CoreCompileInputs.cache
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.dll
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.pdb
+D:\H_New_Projects\legaldocks\LegalDocks\LD.Configuration\obj\Debug\netstandard2.0\LD.Configuration.csprojAssemblyReference.cache

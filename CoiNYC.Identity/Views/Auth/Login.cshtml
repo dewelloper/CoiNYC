@@ -1,0 +1,77 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using System.Globalization
+@using IdentityServer.Resources
+@model IdentityServer.Models.LoginViewModel
+@inject SignInManager<CoiNYC.Domain.Repositories.ApplicationUser> SignInManager
+
+
+
+<h2>@ViewData["Title"] LOGIN</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section>
+            <form asp-controller="Auth" asp-action="Login" method="post" class="form-horizontal">
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">User Name</label>
+                    <div class="col-md-8">
+                        <input type="hidden" asp-for="ReturnUrl" />
+                        <input asp-for="Username" class="form-control" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">or email</label>
+                    <div class="col-md-8">
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">password</label>
+                    <div class="col-md-8">
+                        <input asp-for="Password" class="form-control" type="password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Remember Me</label>
+                    <div class="checkbox col-md-8" style="margin-left:10px;">
+                        <input asp-for="RememberLogin" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-md-8">
+                        <button type="submit" class="btn btn-default">login</button>
+                    </div>
+                </div>
+                <p>
+                    <a asp-action="Register" asp-route-returnurl="@Model.ReturnUrl">Register As New User</a>
+                </p>
+                <p>
+                    <a asp-action="ForgotPassword">Forgot Your Password</a>
+                </p>
+            </form>
+        </section>
+    </div>
+    <div class="col-md-4">
+        <section>
+            <h1>Sign In With</h1>
+            <form asp-controller="Auth" asp-action="ExternalLogin"
+                  asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                @foreach (var provider in Model.ExternalProviders)
+                {
+                    <button name="provider" class="btn btn-default"
+                            type="submit"
+                            value="@provider.Name">
+                        @provider.Name
+                    </button>
+                }
+            </form>
+        </section>
+    </div>
+</div>
+@*@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}*@

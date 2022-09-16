@@ -1,0 +1,29 @@
+﻿@*@model System.Globalization.CultureInfo
+<script src="~/Scripts/plugins/bootstrap-table/locale/bootstrap-table-@(Model.TextInfo.CultureName).min.js"></script>
+<script src="@Url.Content(String.Format("~/Scripts/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.{0}.min.js", Model.TwoLetterISOLanguageName))" charset="UTF-8"></script>
+
+<script type='text/javascript'>
+    $.when(
+        $.get('@Url.Content(String.Format("~/Scripts/cldr-data/main/{0}/numbers.json", Model.TwoLetterISOLanguageName))'),
+        $.get('@Url.Content("~/Scripts/cldr-data/supplemental/numberingSystems.json")'),
+        $.get('@Url.Content(String.Format("~/Scripts/cldr-data/main/{0}/ca-gregorian.json", Model.TwoLetterISOLanguageName))'),
+        $.get('@Url.Content(String.Format("~/Scripts/cldr-data/main/{0}/timeZoneNames.json", Model.TwoLetterISOLanguageName))'),
+        $.get('@Url.Content("~/Scripts/cldr-data/supplemental/timeData.json")'),
+        $.get('@Url.Content("~/Scripts/cldr-data/supplemental/weekData.json")'),
+        $.get('@Url.Content("~/Scripts/cldr-data/supplemental/likelySubtags.json")')
+    ).then(function () {
+        // Normalize $.get results, we only need the JSON, not the request statuses.
+        return [].slice.apply(arguments, [0]).map(function(result) {
+            return result[0];
+        });
+    }).then(Globalize.load).then(function() {
+
+        // Initialize Globalize to the current UI culture
+        Globalize.locale('@Model.TwoLetterISOLanguageName.ToLower()');
+        //$('form').validate({
+        //    submitHandler: function(form) {
+        //        alert('This is a valid form!');
+        //    }
+        //});
+    });
+</script>*@

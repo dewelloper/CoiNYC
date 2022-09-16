@@ -1,0 +1,17 @@
+﻿{
+  "Languages": [
+    { "Code": "en" },
+    {
+      "Code": "de"
+    },
+    {
+      "Code": "tr",
+      "IsDefault": true
+    },
+    {
+      "Code": "nl"
+    }
+  ],
+  "ShowcaseTypes": [ "Product", "Category", "Collection", "DynamicPage" ]
+
+}

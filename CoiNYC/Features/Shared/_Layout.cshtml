@@ -1,0 +1,81 @@
+﻿@namespace Localisation.Pages
+
+<!DOCTYPE html>
+<html class="no-js" lang="@System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.ToLower()">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>coinyc</title>
+    <meta name="keywords" content="coinyc.com coin market information and trading analysis" />
+    <meta name="robots" content="noodp,index,follow" />
+    <meta name='revisit-after' content='1 days' />
+    <meta name="description" content="crypto coin market information currency bitcoin btc etherium bitcoin cache XRP eos litecoin caps">
+    <meta name="theme-color" content="black">
+
+    <link rel="stylesheet" type="text/css" href="~/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="~/css/theme-styles.css">
+    <link rel="stylesheet" type="text/css" href="~/css/blocks.css">
+    <link rel="stylesheet" type="text/css" href="~/css/widgets.css">
+    <link rel="stylesheet" type="text/css" href="~/css/font-awesome.css">
+
+    <link href="~/../../fonts.googleapis.com/css0663.css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
+
+    @RenderSection("head", required: false)
+</head>
+<body class="crumina-grid">
+
+    @await Html.PartialAsync("_Header")
+
+    @RenderBody()
+
+    @await Html.PartialAsync("_Footer")
+
+
+    @*@Scripts.Render("~/bundles/site")*@
+    <script src="~/js/method-assign.js"></script>
+
+    <!-- jQuery first, then Other JS. -->
+
+    <script src="~/js/jquery-3.3.1.js"></script>
+
+    <script src="~/js/js-plugins/leaflet.js"></script>
+    <script src="~/js/js-plugins/MarkerClusterGroup.js"></script>
+    <script src="~/js/js-plugins/crum-mega-menu.js"></script>
+    <script src="~/js/js-plugins/waypoints.js"></script>
+    <script src="~/js/js-plugins/jquery-circle-progress.js"></script>
+    <script src="~/js/js-plugins/segment.js"></script>
+    <script src="~/js/js-plugins/bootstrap.js"></script>
+    <script src="~/js/js-plugins/imgLoaded.js"></script>
+    <script src="~/js/js-plugins/jquery.matchHeight.js"></script>
+    <script src="~/js/js-plugins/jquery-countTo.js"></script>
+    <script src="~/js/js-plugins/Headroom.js"></script>
+    <script src="~/js/js-plugins/jquery.magnific-popup.js"></script>
+    <script src="~/js/js-plugins/popper.min.js"></script>
+    <script src="~/js/js-plugins/particles.js"></script>
+    <script src="~/js/js-plugins/perfect-scrollbar.js"></script>
+    <script src="~/js/js-plugins/jquery.datetimepicker.full.js"></script>
+    <script src="~/js/js-plugins/svgxuse.js"></script>
+    <script src="~/js/js-plugins/select2.js"></script>
+    <script src="~/js/js-plugins/smooth-scroll.js"></script>
+    <script src="~/js/js-plugins/sharer.js"></script>
+    <script src="~/js/js-plugins/isotope.pkgd.min.js"></script>
+    <script src="~/js/js-plugins/ajax-pagination.js"></script>
+    <script src="~/js/js-plugins/swiper.min.js"></script>
+    <script src="~/js/js-plugins/material.min.js"></script>
+    <script src="~/js/js-plugins/orbitlist.js"></script>
+    <script src="~/js/js-plugins/highstock.js"></script>
+    <script src="~/js/js-plugins/bootstrap-datepicker.js"></script>
+    <script src="~/js/js-plugins/TimeCircles.js"></script>
+    <script src="~/js/js-plugins/ion.rangeSlider.js"></script>
+
+    <!-- FontAwesome 5.x.x JS -->
+
+    <script defer src="~/fonts/fontawesome-all.js"></script>
+
+    <script src="~/js/main.js"></script>
+
+    <!-- SVG icons loader -->
+    <script src="~/js/svg-loader.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

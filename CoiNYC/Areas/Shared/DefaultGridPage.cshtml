@@ -1,0 +1,53 @@
+﻿@using CoiNYC.Infrastructure
+@using Microsoft.AspNetCore.Mvc.Rendering;
+@model CoiNYC.Infrastructure.IGridPageModel
+
+@{
+    Layout = "_TitledLayout.cshtml";
+    ViewBag.Title = Model.Title;
+}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox-content m-b-sm border-bottom grid-filter">
+
+            @if (!String.IsNullOrEmpty(Model.FilterViewName) && Model.Filter != null)
+            {
+                @await Html.PartialAsync(Model.FilterViewName, Model.Filter)
+            }
+
+        </div>
+    </div>
+</div>
+<div class="ibox-content">
+    <div class="fixed-table-toolbar">
+        @*@Html.Action("RenderButtons")*@
+        @Html.RenderAction("RenderButtons", "Product", "area", new { id = 1 })
+    </div>
+    @if (Model.GridBuilder != null)
+    {
+        var htmlTableString = Html.GridFrom(Model.GridBuilder, Model.GridId).ToString();
+        WriteLiteral(htmlTableString);
+    }
+</div>
+
+@section Styles{
+    <link href="~/css/gridFilter.css" rel="stylesheet" />
+}
+
+@section scripts{
+    @*@Scripts.Render("~/plugins/export")*@
+    @*@Scripts.Render("~/bundles/app-grid")*@
+    @if (!String.IsNullOrEmpty(Model.ScriptViewName))
+    {
+        @await Html.PartialAsync(Model.ScriptViewName, Model.ScriptModel)
+    }
+}
+
+
+
+
+
+
+
+
+
